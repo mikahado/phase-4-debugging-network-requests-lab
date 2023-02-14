@@ -62,12 +62,17 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Opened up developer tools. In the network tab, I saw this error: 
+"Internal Server Error" exception
+"#<NameError: uninitialized constant ToysController::Toys>"
+status: 500
+
+In the application controller, there is a mistake in the CREATE route. Toys should be Toy. 
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: 
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: 
